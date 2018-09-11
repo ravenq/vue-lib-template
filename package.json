@@ -7,7 +7,7 @@
     "name": "ravenq",
     "e-mail": "flw_dream@126.com"
   },
-  "main": "dist/markdown-it-vue.mini.js",
+  "main": "dist/vue-lib-template.mini.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "src"
   ],
   "scripts": {
-    "build": "npm run build:lib && npm run build:exaple",
+    "build": "npm run build:lib && npm run build:example",
     "build:lib": "node build/build.js",
     "build:example": "node example/build/build.js",
     "dev": "webpack-dev-server --inline --progress --config example/build/webpack.dev.conf.js",

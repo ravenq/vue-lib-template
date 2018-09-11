@@ -22,12 +22,12 @@ const createLintingRule = () => ({
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    'vue-lib-template': './src/index.vue'
+    'vue-lib-template': './src/index.js'
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].mini.js',
-    library: 'VueMarkdown',
+    library: 'VueLibTemplate',
     libraryTarget: 'umd'
   },
   resolve: {
@@ -40,7 +40,7 @@ module.exports = {
   },
   module: {
     rules: [
-      ... [createLintingRule()],
+      ...[createLintingRule()],
       ...utils.styleLoaders(),
       {
         test: /\.vue$/,
@@ -85,8 +85,8 @@ module.exports = {
         }
       }
     ]
-  }
-  ,plugins: [
+  },
+  plugins: [
     new UglifyJsPlugin({
       uglifyOptions: {
         compress: {

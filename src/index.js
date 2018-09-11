@@ -1,4 +1,4 @@
-import VueLibTempalte from './markdown-it-vue'
+import VueLibTempalte from './vue-lib-template'
 
 const install = function (Vue) {
   Vue.component(VueLibTempalte.name, VueLibTempalte)
